@@ -30,10 +30,70 @@ nav> ul > li >a {
 nav> ul > li > a:hover {
     color: rgb(40, 160, 80);
     text-decoration: underline;
-    margin: 3px;
+    margin: 1px;
+    width: 10px;
 }
 
 .hero {
-    height: 100vh;
-    color: black;
+    background-image: url("images.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+}
+.hero > h2 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+    padding-top: 2rem;
+}   
+.hero > p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}  
+
+.btn {
+    background-color: rgb(169, 43, 43);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    width: 80px;
+    border-radius: 5px;
+    height: 30px;
+}
+.btn:hover {
+    background-color: rgb(40, 160, 80);
+}
+.btn-secondary {
+    background-color:rgb(169, 34, 34);
+    color: white;
+}
+.btn-container {
+    margin-top: 0.5rem;
+}
+.btn-secondary:hover {
+    background-color: black;
+}
+
+.about >h2{
+    text-align: none; 
+    font-style: italic;
+    text-decoration: underline;
+}
+section > h2 {
+    color: rgb(169, 43, 43);
+    margin: 20px;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
 }

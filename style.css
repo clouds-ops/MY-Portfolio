@@ -1,0 +1,39 @@
+* {
+    margin: 1px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(169, 43, 43);
+    color: white;
+    height: 100px;
+    padding:2px;
+}
+header > h1{
+    color: black;
+}
+
+nav> ul> li {
+    margin-right: 2px;
+    color: white;
+    display: inline-block;
+    list-style: none;
+}
+nav> ul > li >a {
+    color: white;
+    text-decoration: none;
+}
+nav> ul > li > a:hover {
+    color: rgb(40, 160, 80);
+    text-decoration: underline;
+    margin: 3px;
+}
+
+.hero {
+    height: 100vh;
+    color: black;
+}

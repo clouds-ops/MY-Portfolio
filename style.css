@@ -1,5 +1,5 @@
 * {
-    margin: 1px;
+    margin: 0px;
     padding: 0.5rem;
     box-sizing: content-box;
     background-color: none;
@@ -80,18 +80,13 @@ nav> ul > li > a:hover {
 .btn-secondary:hover {
     background-color: black;
 }
-.about {
-    margin: 10px;
-    text-decoration-line: none;
-    list-style: none;
-}
-.about > h2 {
-    text-align: center;
-} 
+ 
 section {
     background-color: grey;
     border: none;
     box-shadow: none;
+    margin: 1px;
+    padding: 0px;
 }
 
 section > h2 {
@@ -99,6 +94,8 @@ section > h2 {
     font-size: 2rem;
     color: rgb(169, 43, 43);
 }
+
+/**about*/
 
 .container {
     display: flexbox;
@@ -121,16 +118,22 @@ section > h2 {
 
 p {
     color: black;
-    font-style: italic;
+    font-style: normal;
 }
 .left-container {
     display: ruby-base-container;
     margin-right: 2rem;
+    justify-content: space-around;
 }
-.right-container {
-border-top-right-radius: 50px ;
-background-position:center;
+.right-container >  img {
+border-top-right-radius: 50px;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
 }
+
+/**gallery*/
+
 .gallery-container {
     text-align: left;
     margin:40 px;
@@ -141,6 +144,9 @@ background-position:center;
     display: inline-block;
     text-align: left;
 }
+
+/**testimonial*/
+
 .card{
     display:flex;
     grid-template-columns:repeat(3,1fr);
@@ -150,7 +156,7 @@ background-position:center;
 }
 
 .testimonial-card {
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     border-width: 50px;
     background-color: palegreen;
@@ -158,24 +164,76 @@ background-position:center;
     border-radius: 50px;
 }
 
-.service > ul > li {
-    text-decoration-style: none;
-    list-style: none;
-    color: black;
-}
+/**services*/
+
 
 .service-card {
     border: 1px solid rgb(10, 11, 10);
-    margin: 10px;
+    margin: 50px;
+    padding: 3px;
     border-radius: 5px;
     text-align: center;
     box-shadow: 5px 5px  5px black ;
 }
 .service-card > h2 {
     font-size: 20px;
-    color: white
+    color: white;
+    font-style: italic;
 }
 .service-card > p {
     font-size: 14px;
     color: #000;
+}
+.contacts-card > form {
+    color: rgb(117, 49, 49);
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+
+}
+
+.contacts-card > p {
+    text-align: left;
+    font-style: italic;
+}
+
+.label {
+    color: rgb(8, 93, 93);
+    padding: 10px;
+}
+
+input {
+    color: #000;
+    cursor: pointer;
+    background-color: grey;
+    
+}
+
+textarea {
+    width: 30%;
+    resize: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+textarea:focus {
+    background-color:grey;
+}
+
+.footer {
+    list-style: none;
+    color:rgb(196, 50, 50);
+    text-align: left;
+
+}
+
+.footer-card {
+    display: flex;
+    padding: 3px;
+    margin: 2px;
+    list-style: none;
+    box-sizing: content-box;
+    text-align: left;
+}
+.footer-card > h3 {
+    color:blue;
 }
